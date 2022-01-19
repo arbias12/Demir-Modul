@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="startseite" content="Startseite">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <script src="jsdatei.js"></script>
+</head>
+
+<body>
+<div class="header" id="myHeader">
+<header>
+
+    <div class="ksh"><a href="https://www.fifa.com/"><img src="fotos/fifa3.png" alt="Fifa-Logo" width="90px" height="90px"></a><p class="wegeTitel" id="nameTitle"></p></div>
+    <ul class="ul">
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="geschichte.html">Geschichte</a>
+            <a href="uebersicht.html">Übersicht</a>
+            <a href="kontaktdaten.html">Weiteres</a>
+        </nav>
+    </ul>
+
+</header>
+</div>
+
+<h1 id="startseite">Startseite</h1>
+<h2 id="aendern">Willkommen zu meiner Website</h2>
+<h2>______________________</h2>
+<p class="text">F I F A, zusammen FIFA geschrieben, ist ein Spiel, dass Millionen von Menschen begeistert und inspiriert. FIFA das Unternehmen, auch lang Internationaler Verbund des Fussballs ist der Verband,
+    mit dem man den Fussball von heute am besten beschreibt. Das Spiel Fifa ist also ein Videospiel, dass den Fussball in eine virtuelle Veranschaung abbildet. Der Hersteller des Speiels ist Ea-Sports.
+    Der Verbund FIFA ist jedoch Lizensinhaber. FIFA als Spiel hat eine <a id="geschichteDrucke" href="geschichte.html">Geschichte</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    var title = document.getElementsByTagName("title")[0].text
+
+
+    document.getElementById("nameTitle").innerHTML = title
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+</script>
+<ul class="footerul">
+    <a id="erstesBild" href="https://www.playstation.com/en-us/games/ea-sports-fifa-22/"><img src="fotos/sony.jpg" alt="Ps4" width="200px" height="200px"></a>
+    <a id="zweitesBild" href="https://www.xbox.com/en-NZ/games/store/fifa-22-xbox-one/9n9j38lpvsm3"><img src="fotos/xbox.jpg" alt="Xbox" width="155px" height="200px"></a>
+    <a id="drittesBild" href="https://www.origin.com/deu/de-de/store/fifa/fifa-22"><img src="fotos/pc.png" alt="Xbox" width="142px" height="200px"></a>
+</ul>
+</body>
+<div id="wegFooter">
+<footer class="footer">
+    <h4>made by Arbias</h4>
+
+</footer>
+</div>
+
+</html>
